@@ -47,11 +47,11 @@ class Luban {
   }
 
   static List<String?> _lubanCompressList(List<CompressObject> objects) {
-    var results = [];
+    List<String?> results = [];
     for (var _o in objects) {
       results.add(_lubanCompress(_o));
     }
-    return results as List<String?>;
+    return results;
   }
 
   static bool _parseType(String path, List<String> suffix) {
